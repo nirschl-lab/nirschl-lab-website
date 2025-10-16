@@ -73,12 +73,17 @@ const Team = () => {
                 <div className="member-links">
                   <motion.a
                     href="mailto:jjnirschl@wisc.edu"
-                    className="member-link"
+                    className="member-link email-image-link"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
                     <Mail size={18} />
-                    Email
+                    <img 
+                      src="/assets/email.png" 
+                      alt="Email address" 
+                      className="email-image"
+                      style={{ height: '18px', marginLeft: '4px' }}
+                    />
                   </motion.a>
                   <motion.a
                     href="https://www.linkedin.com/in/jeff-nirschl-56700918/"

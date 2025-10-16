@@ -130,7 +130,14 @@ const Contact = () => {
                 <Send size={20} />
                 <div>
                   <strong>Email:</strong><br />
-                  <a href="mailto:jjnirschl@wisc.edu">jjnirschl@wisc.edu</a>
+                  <a href="mailto:jjnirschl@wisc.edu">
+                    <img 
+                      src="/assets/email.png" 
+                      alt="Email address" 
+                      className="email-image"
+                      style={{ height: '16px', verticalAlign: 'middle' }}
+                    />
+                  </a>
                 </div>
               </div>
 

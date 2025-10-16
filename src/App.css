@@ -814,6 +814,31 @@
   color: var(--primary-color);
 }
 
+/* Email image styling for spam protection */
+.email-image {
+  display: inline-block;
+  max-height: 20px;
+  vertical-align: middle;
+  filter: none;
+  transition: opacity 0.3s ease;
+}
+
+.email-image-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.email-image-link:hover .email-image {
+  opacity: 0.8;
+}
+
+/* Contact item email image specific styling */
+.contact-item .email-image {
+  max-height: 16px;
+  margin-top: 2px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-menu {
