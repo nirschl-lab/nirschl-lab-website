@@ -816,11 +816,15 @@
 
 /* Email image styling for spam protection */
 .email-image {
-  display: inline-block;
+  display: inline-block !important;
   max-height: 20px;
   vertical-align: middle;
   filter: none;
   transition: opacity 0.3s ease;
+  background: white;
+  padding: 2px 4px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
 }
 
 .email-image-link {
@@ -833,9 +837,18 @@
   opacity: 0.8;
 }
 
+/* Static member link for non-clickable email display */
+.member-link-static {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
 /* Contact item email image specific styling */
 .contact-item .email-image {
-  max-height: 16px;
+  max-height: 18px;
   margin-top: 2px;
 }
 

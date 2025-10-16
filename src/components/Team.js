@@ -71,20 +71,15 @@ const Team = () => {
                   </p>
                 </div>
                 <div className="member-links">
-                  <motion.a
-                    href="mailto:jjnirschl@wisc.edu"
-                    className="member-link email-image-link"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <Mail size={18} />
-                    <img 
-                      src="/assets/email.png" 
-                      alt="Email address" 
-                      className="email-image"
-                      style={{ height: '18px', marginLeft: '4px' }}
-                    />
-                  </motion.a>
+                <div className="member-link-static">
+                  <Mail size={18} />
+                  <img 
+                    src="/assets/email.png" 
+                    alt="Email address" 
+                    className="email-image"
+                    style={{ height: '18px', marginLeft: '8px', display: 'inline-block' }}
+                  />
+                </div>
                   <motion.a
                     href="https://www.linkedin.com/in/jeff-nirschl-56700918/"
                     target="_blank"
