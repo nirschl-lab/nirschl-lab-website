@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { MapPin, Mail, Phone, Send } from 'lucide-react';
+import emailImage from '../assets/email.png';
 
 const Contact = () => {
   const ref = useRef(null);
@@ -130,12 +131,31 @@ const Contact = () => {
                 <Send size={20} />
                 <div>
                   <strong>Email:</strong><br />
-                  <img 
-                    src="/assets/email.png" 
-                    alt="Email address" 
-                    className="email-image"
-                    style={{ height: '18px', verticalAlign: 'middle', display: 'inline-block' }}
-                  />
+                  <div className="email-container">
+                    <img 
+                      src={emailImage}
+                      alt="Email address" 
+                      className="email-image"
+                      style={{ 
+                        height: '18px', 
+                        verticalAlign: 'middle', 
+                        display: 'inline-block',
+                        maxWidth: '200px'
+                      }}
+                      onError={(e) => {
+                        console.log('Image failed to load, showing fallback');
+                        e.target.style.display = 'none';
+                        const fallback = e.target.nextElementSibling;
+                        if (fallback) fallback.style.display = 'inline';
+                      }}
+                    />
+                    <span 
+                      className="email-fallback" 
+                      style={{ display: 'none', color: '#666', fontSize: '14px' }}
+                    >
+                      [Email image - jjnirschl at wisc dot edu]
+                    </span>
+                  </div>
                 </div>
               </div>
 

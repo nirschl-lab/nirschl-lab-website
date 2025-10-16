@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Mail, Linkedin, GraduationCap, Users } from 'lucide-react';
+import emailImage from '../assets/email.png';
 
 const Team = () => {
   const ref = useRef(null);
@@ -73,12 +74,31 @@ const Team = () => {
                 <div className="member-links">
                 <div className="member-link-static">
                   <Mail size={18} />
-                  <img 
-                    src="/assets/email.png" 
-                    alt="Email address" 
-                    className="email-image"
-                    style={{ height: '18px', marginLeft: '8px', display: 'inline-block' }}
-                  />
+                  <div className="email-container">
+                    <img 
+                      src={emailImage}
+                      alt="Email address" 
+                      className="email-image"
+                      style={{ 
+                        height: '18px', 
+                        marginLeft: '8px', 
+                        display: 'inline-block',
+                        maxWidth: '200px'
+                      }}
+                      onError={(e) => {
+                        console.log('Image failed to load, showing fallback');
+                        e.target.style.display = 'none';
+                        const fallback = e.target.nextElementSibling;
+                        if (fallback) fallback.style.display = 'inline';
+                      }}
+                    />
+                    <span 
+                      className="email-fallback" 
+                      style={{ display: 'none', color: '#666', fontSize: '14px', marginLeft: '8px' }}
+                    >
+                      [Email image - jjnirschl at wisc dot edu]
+                    </span>
+                  </div>
                 </div>
                   <motion.a
                     href="https://www.linkedin.com/in/jeff-nirschl-56700918/"
