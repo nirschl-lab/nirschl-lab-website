@@ -15,7 +15,7 @@ const Hero = () => {
       {/* Background banner image overlay */}
       <div className="hero-banner-overlay">
         <img 
-          src="/assets/nirschl-lab-banner.jpg" 
+          src={`${process.env.PUBLIC_URL}/assets/nirschl-lab-banner.jpg`}
           alt="Computational Neuropathology Banner"
           className="hero-banner-image"
           onError={(e) => {

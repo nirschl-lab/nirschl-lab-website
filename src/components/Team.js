@@ -47,7 +47,7 @@ const Team = () => {
             >
                             <div className="member-photo">
                 <img 
-                  src="/assets/jeff_headshoot.jpg" 
+                  src={`${process.env.PUBLIC_URL}/assets/jeff_headshoot.jpg`}
                   alt="Dr. Jeff Nirschl"
                   onError={(e) => {
                     e.target.style.display = 'none';

@@ -2,13 +2,18 @@
   "name": "nirschl-lab-website",
   "version": "1.0.0",
   "description": "Nirschl Lab - Computational Neuropathology Research Website",
+  "homepage": "https://nirschl-lab.github.io/nirschl-lab-website",
   "main": "index.js",
   "scripts": {
     "start": "GENERATE_SOURCEMAP=false react-scripts start",
     "start-safe": "BROWSER=none GENERATE_SOURCEMAP=false react-scripts start",
-    "build": "react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "winBuild": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
+    "start-win": "set \"GENERATE_SOURCEMAP=false\" && react-scripts start",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run winBuild",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "computational",
@@ -21,16 +26,17 @@
   "author": "Nirschl Lab",
   "license": "MIT",
   "dependencies": {
+    "framer-motion": "^10.16.0",
+    "lucide-react": "^0.263.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
     "react-router-dom": "^6.8.0",
-    "framer-motion": "^10.16.0",
-    "lucide-react": "^0.263.1"
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0"
+    "@types/react-dom": "^18.2.0",
+    "gh-pages": "^6.3.0"
   },
   "browserslist": {
     "production": [
@@ -44,4 +50,4 @@
       "last 1 safari version"
     ]
   }
-} 
+}
