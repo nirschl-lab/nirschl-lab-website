@@ -80,10 +80,10 @@ const Team = () => {
                       alt="Email address" 
                       className="email-image"
                       style={{ 
-                        height: '18px', 
+                        height: '24px', 
                         marginLeft: '8px', 
                         display: 'inline-block',
-                        maxWidth: '200px'
+                        maxWidth: '300px'
                       }}
                       onError={(e) => {
                         console.log('Image failed to load, showing fallback');
