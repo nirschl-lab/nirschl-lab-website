@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.css": "/nirschl-lab-website/static/css/main.6cf98952.css",
+    "main.js": "/nirschl-lab-website/static/js/main.2f8f9ed5.js",
+    "index.html": "/nirschl-lab-website/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.6cf98952.css",
+    "static/js/main.2f8f9ed5.js"
+  ]
+}
