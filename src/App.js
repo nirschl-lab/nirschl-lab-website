@@ -28,7 +28,7 @@ function App() {
   );
 
   return (
-    <Router>
+    <Router basename="/nirschl-lab-website">
       <div className="App">
         <Routes>
           <Route path="/" element={<HomePage />} />
