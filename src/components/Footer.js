@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Brain, ExternalLink } from 'lucide-react';
 
@@ -127,7 +128,7 @@ const Footer = () => {
           <div className="footer-bottom-content">
             <p>&copy; 2025 Nirschl Lab. All rights reserved.</p>
             <div className="footer-links">
-              <a href="/privacy">Privacy Policy</a>
+              <Link to="/privacy">Privacy Policy</Link>
               <a href="/terms">Terms of Use</a>
               <a href="#contact" onClick={(e) => {
                 e.preventDefault();
