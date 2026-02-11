@@ -8,6 +8,28 @@ const Publications = () => {
 
   const publications = [
     {
+      year: '2026',
+      title: 'Uncertainty-Aware Image Classification In Biomedical Imaging Using Spectral-normalized Neural Gaussian Processes',
+      authors: 'Uma Meleti, Jeffrey J. Nirschl',
+      journal: 'arXiv',
+      citations: 0,
+      links: [
+        { type: 'arXiv', url: 'https://arxiv.org/abs/2602.02370' }
+      ]
+    },
+    
+    {
+      year: '2026',
+      title: 'iSight: Towards expert-AI co-assessment for improved immunohistochemistry staining interpretation',
+      authors: 'Jacob S. Leiby, Jialu Yao, Pan Lu, George Hu, Anna Davidian, Shunsuke Koga, Olivia Leung, Pravin Patel, Isabella Tondi Resta, Rebecca Rojansky, Derek Sung, Eric Yang, Paul J. Zhang, Emma Lundberg, Dokyoon Kim, Serena Yeung-Levy, James Zou, Thomas Montine, Jeffrey Nirschl, Zhi Huang',
+      journal: 'arXiv',
+      citations: 0,
+      links: [
+        { type: 'arXiv', url: 'https://arxiv.org/abs/2602.04063' }
+      ]
+    },
+
+    {
       year: '2023',
       title: 'Deep learning for medical image analysis',
       authors: 'S.K. Zhou, H. Greenspan, D. Shen',
